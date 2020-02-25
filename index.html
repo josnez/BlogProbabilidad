@@ -5,9 +5,138 @@
 	<title>Distribucion normal</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/colores.css">
 </head>
 <body>
-	<h1>Distribucion normal de probabilidad</h1>
+	<header>
+		<div class="container">
+			<h1 class="titPrin">Distribucion de probabilidad</h1>
+		</div>
+	</header>
+	<div class="container">
+		<section class="main row">
+			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+				<p>	
+					<h3>Ejemplo:  Teorema Fundamental de las Distribuciones normales </h3>
+					
+					<div class="ejemplo">
+						<p>
+
+							Una pieza J está compuesta por 2 elementos de A y uno de B , que se unen sin solapamiento . La longitud de las piezas A sigue una N[4;1] cm. , mientras que las B también son normales N[12;2]cm. Queremos conocer la probabilidad de crear una pieza J de longitud inferior a 20,2 cm
+						</p>
+
+						Longitud de J = longitud de A+ longitud de A + longitud de B
+
+						y no Longitud de J = 2veces longitud de A + longitud de B
+						<p>
+						dado que si una pieza A es de una determinada longitud aleatoria la otra pieza A no tiene porque ser de la misma longitud (aunque proceda o se distribuya con la misma distribución de probabilidad). A parte de esto ,el hecho de utilizar suma o producto no da el mismo resultado al aplicar el teorema fundamental de las distribuciones normales , dado que la suma o producto se realizan dentro de una raíz . Por ello ,en este caso , hemos de tomar la primera expresión , así:
+
+						</p>
+						L(J)=L(A)+L(A)+L(B) simplificando J=A+A+B dado que:
+
+						A® N [ 4; 1] y B® N[12; 2] y son independientes:
+
+						y en aplicación del teorema fundamental de las distribuciones normales ,  tendremos que 
+
+						J => N[μa + μa + μb; ((σa)^2+(σa)^2+(σb)^2)^(1/2)]
+
+						Entonces J®N [20, 2.449] (Verdadera longitud de la pieza)
+
+						Se pregunta por: P(J<= 20.2)) = P(t<=(20.2-20)/(2.449))= 0.532
+					</div>
+				</p>
+			</article>
+			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+				<p>
+					<h3>Temario</h3>
+					<ul>
+					  <li>La distribucion Normal general</li>
+					  <li>La distribucion Normal Reducida (Tipificada)</li>
+					  <li>Funciones de distribucion</li>
+					  <li>Funcion generatriz de momentos</li>
+					  <li>Media y Varianza de la DistribuciÛn Normal. </li>
+					  <li>Coeficientes de asimetrÌa y kurtosis de la distribucion normal. </li>
+					  <li>Teorema de adicion</li>
+					  <li>Teorema Fundamental de las Distribuciones Normales</li>
+					  <li>Distribuciones Normales-Transformadas</li>
+					  <li>CHEBYSHEV</li>
+					</ul>
+				</p>
+			</aside>
+		</section>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h3>La distribucion Normal Reducida</h3>
+				<p>	
+					La distribución normal estándar, o tipificada o reducida, es aquella que tiene por media el valor cero, μ =0, y por desviación típica la unidad, σ =1. 
+					La probabilidad de la variable X dependerá del área del recinto sombreado en la figura. Para poder utilizar la tabla tenemos que transformar la variable X que sigue una distribución N (μ, σ) en otra variable Z que siga una distribución N (0, 1).
+					Z= (x-μ )/(μ ) 
+					Tabla de distribución normal
+
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Funcion generatriz de momentos </h3>
+					
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<h3>Media y Varianza de la DistribuciÛn Normal. </h3>
+				<p>
+					
+					Los nombres de esperanza matemática y valor esperado tienen su origen en los juegos de azar y hacen referencia a la ganancia promedio esperada por un jugador cuando hace un gran número de apuestas.
+					Si la esperanza matemática es cero, E(x) = 0, el juego es equitativo, es decir, no existe ventaja ni para el jugador ni para la banca.
+
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Coeficientes de asimetrÌa y kurtosis de la distribucion normal. </h3>
+					
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Teorema de adicion</h3>
+					
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Teorema Fundamental de las Distribuciones Normales</h3>
+					
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>	
+					<h3>Distribuciones Normales - Transformadas</h3>
+					
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>CHEBYSHEV</h3>
+					
+				</p>
+				<button class="btn1">Ver mas</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<h4>Coautores: Diego UD - Daniel UD - Felipe UD - Nicolas UD - Josue Nuñez</h4>
+		</div>
+	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
