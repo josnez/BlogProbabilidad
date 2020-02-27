@@ -36,3 +36,8 @@ footer {
 p {
 	text-align: justify;
 }
+
+.titPrin {
+	display: inline-block;
+	padding: 20px;
+}
