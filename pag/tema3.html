@@ -10,10 +10,13 @@
 <body>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 	<!-- Navbar content -->
-			<a class="navbar-brand" href="https://bogota.gov.co/">
-			    <img src="../img/distrito.gif" width="30" height="30" alt="">
-			</a>
-			<a class="btn btn-outline-success btn-outline-info" href="../index.html">Volver al temario</a>
+		<a class="navbar-brand" href="https://bogota.gov.co/">
+			    <img src="../img/distrito1.jpg" width="30" height="30" alt="">
+		</a>
+		<a class="btn btn-outline-success btn-outline-info" href="../index.html">Volver al temario</a>
+		<a class="navbar-brand" href="https://www.udistrital.edu.co/">	
+			<img src="../img/logoDistri.png" width="40" height="40" alt="">
+		</a>
 	  	<form class="form-inline">
 	    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 	    <button class="btn btn-outline-success btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
@@ -29,11 +32,19 @@
 		<section class="main row">
 			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
 				<p>	
-					<h3>Ejemplo: </h3> <br>
+					<h3>Ejemplo: Calcular el la probabilidad de que una variable tome ciertos valores</h3> <br><br>
+
+					<img src="../img/ejemCalcular.jpg" width="200rem" height="300rem" alt=""><br><br>
 					
 					<div class="ejemplo">
 						<p class="introduccion">
-							
+							Sea X una variable aleatoria que se distribuye según una normal de media 5 y desviación típica 2. Calcular la probabilidad de que dicha variable tome valores inferiores a 4. X -> N (5; 2) se nos pide P(x<=4) sin utilizar tablas o algoritmos de recurrencia tendríamos que realizar la integral: <br><br>
+							<img src="../img/funDisEjm.jpg" alt=""><br><br>
+							Para no tener que resolver dicha integral y dado que no podemos tener tabuladas todas las posibles distribuciones normales (por ejemplo esta, la N (5; 2)) transformaremos el valor de la variable sobre el que queremos calcular una probabilidad aun valor tipificado (estandarizado), para poder usar la tabla de la N (0; 1) que habitualmente tenemos a mano realizada-calculada por varios autores. Así, siendo t-> N (0; 1) tendríamos: <br><br>
+							<img src="../img/funDisEjm1.jpg" alt=""><br><br>
+							Así el efecto de lo apuntado sería el expuesto en la imagen: <br><br>
+							<img src="../img/funDisEjm2.jpg" alt=""><br><br>
+							Utilizando una tabla de la normal 0,1 obtendríamos el valor 0.691
 						</p>
 					</div>
 				</p>
@@ -42,9 +53,9 @@
 				<br><h4>Pasos de solucion: </h4> <br>
 				<p class="introduccion">
 					<ol>
-						<li>Encontramos el valor para μ, σ, X. </li><a href="">Descubrir como</a><hr>
-						<li>Reemplazamos en la ecuacion para encontrar Z. </li><a href="">Descubrir como</a><hr>
-						<li>Miramos en la tabla de distribucion normal que probabilidad hay para el Z obtenido. </li><a href="">Descubrir como</a><hr>
+						<li> </li><a href="">Descubrir como</a><hr>
+						<li> </li><a href="">Descubrir como</a><hr>
+						<li> </li><a href="">Descubrir como</a><hr>
 					</ol>
  				</p>
 			</div>
@@ -52,12 +63,31 @@
 		<div class="row">
 			<div class="container-fluid">
 				<div class="col-xs-12">
-					
+				<hr>
+				<h3>Funciones de distribucion</h3><br>
+				<p class="introduccion">
+					Como ya conocemos la distribución normal (general) de probabilidad tiene una función de densidad <br><br>
+					<img src="../img/funDis.jpg" alt=""> <br> <br>
+					Que integrada para todo su campo ]-∞ ,∞ [ daría como resultado la expresión analítica de su función de distribución de probabilidad. Para el cálculo de probabilidades específicas para un determinado valor de la variable X (que se plantea que se distribuye según una Normal) tendríamos que la probabilidad de que la variable X se menor o igual (el hecho igual es indiferente pues estamos ante una variable continua) a un valor X1 es: <br><br>
+					<img src="../img/funDis2.jpg" alt=""><br><br>
+					La realización de este cálculo de probabilidad supone la realización de la integral y depender· para cada caso del valor de los parámetros de la función μ y σ. <br>
+					Dado que los valores que pueden tener dichos parámetros son infinitos y distintos para cada caso, nos vemos en la necesidad de realizar la integral y el cálculo para cada valor de probabilidad que queramos establecer. Para solventar este problema operativo la solución radica en transformar la normal con la que estemos trabajando en la normal tipificada N [0; 1]. ; tipificando los valores de la variable de los que queramos establecer probabilidades. <br>
+					De esta manera solo tendremos que actuar con la función de densidad de la normal reducida que, evidentemente, es más sencilla de manera que: <br><br>
+					Si X -> N [μ ; σ ] y pretendemos calcular P(x < X) <br><br>
+					Haríamos: trabajar, con la más sencilla, normal reducida Z -> N [0; 1] <br><br>
+					Calculando P (z<=z1) donde <br><br>
+					<img src="../img/funDis3.jpg" alt=""><br><br>
+					Es decir el valor tipificado de X1 de esta manera tendríamos que realizar: <br><br>
+					<img src="../img/funDis4.jpg" alt=""><br><br>
+					Que resulta más fácil de resolver, dado que todas las distintas normales con las que nos podemos encontrar son susceptibles de transformarse en "tipificadas”, la ̇nica que tiene sus valores tabulados en una tabla es, precisamente, la normal [0; 1].
+				</p>
 				</div>
 			</div>
 		</div>
+		<hr>
 	<footer>
 		<div class="container">
+			<br><br>
 		</div>
 	</footer>
 	<script src="../js/jquery.js"></script>

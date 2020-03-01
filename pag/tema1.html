@@ -10,10 +10,13 @@
 <body>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 	<!-- Navbar content -->
-			<a class="navbar-brand" href="https://bogota.gov.co/">
-			    <img src="../img/distrito.gif" width="30" height="30" alt="">
-			</a>
-			<a class="btn btn-outline-success btn-outline-info" href="../index.html">Volver al temario</a>
+		<a class="navbar-brand" href="https://bogota.gov.co/">
+			    <img src="../img/distrito1.jpg" width="30" height="30" alt="">
+		</a>
+		<a class="btn btn-outline-success btn-outline-info" href="../index.html">Volver al temario</a>
+		<a class="navbar-brand" href="https://www.udistrital.edu.co/">	
+			<img src="../img/logoDistri.png" width="40" height="40" alt="">
+		</a>
 	  	<form class="form-inline">
 	    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 	    <button class="btn btn-outline-success btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
@@ -52,12 +55,36 @@
 		<div class="row">
 			<div class="container-fluid">
 				<div class="col-xs-12">
+					<hr>
+					<h3>Distribucion normal general</h3>
+					<p class="text-justify">
+						Como se ha dicho ,depende de dos parametros , μ ,σ , que como luego comprobaremos , son su media y su desviacion tipica . El hecho de que una variable x se distribuya con una distribucion normal de media μ y desviacion tipica σ se representa por: <br><br>
+					</p>
+					<img src="../img/disNorGen.jpg" alt=""><br><br>
+					<p class="text-justify">
+						Aunque nosotros seguiremos este sistema de especificacion, es bastante corriente, tambien, que a la distribucion normal se la especifique por los parametros media y varianza ( en vez de desviacion tipica), μ , σ^2 <br><br>
+						Su funcion de densidad es: <br><br>
+					</p>
+						<img src="../img/funDenNorm.png" alt=""><br><br>
+						Las caracteristicas de dicha función de densidad seran: <br><br>
+						Si realizamos la primera derivada de dicha funcion tendremos que : <br><br>
+						&nbsp;&nbsp;&nbsp;dado que:<img src="../img/funDenNorm1.jpg"><br><br>
+						<img src="../img/funDenNorm2.png" alt=""><br><br>
+						la segunda derivada será: <br><br>
+						<img src="../img/funDenNorm3.jpg" alt=""><br><br>
+					<p class="text-justify">
+							Igualando a cero la primera derivada obtenemos que y'=0 para X = μ y para X = ∞. <br>
+							Como la segunda derivada en x = μ es negativa ,concluimos que la funcion de densidad presenta un maximo en X = μ , lo que nos hace afirmar que la media (μ) es también la moda de la distribución normal. <br>
+							Es facil comprobar que la función de densidad presenta dos puntos de inflexión en los valores X = μ+-σ <br>
+							Por otro lado para cualquier valor de a se verifica que: f(μ+a) = f(μ-a) por lo que la función es simétrica respecto a μ.
+					</p>
 					
 				</div>
 			</div>
 		</div>
 	<footer>
 		<div class="container">
+			<br><br>
 		</div>
 	</footer>
 	<script src="../js/jquery.js"></script>
