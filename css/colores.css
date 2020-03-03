@@ -13,8 +13,8 @@ header {
 }
 
 .ventana {
-	background: #c0392b;
-	color: #fff;
+	background: #2996C9;
+	color: #000000;
 }
 
 footer {
@@ -37,6 +37,7 @@ footer {
 .titPrin {
 	display: inline-block;
 	padding: 20px;
+	color: #FFFAFA;
 }
 
 .tema {
