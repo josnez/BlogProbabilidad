@@ -18,7 +18,7 @@ header {
 }
 
 footer {
-	background: #2996C9;
+	background: #E1E1E1;
 	color: #000000;
 }
 
@@ -50,4 +50,8 @@ footer {
 
 .introduccion {
 	text-align: justify;
+}
+
+.linkPasos {
+	color: #FDB300;
 }
