@@ -13,14 +13,10 @@
 		<a class="navbar-brand" href="https://bogota.gov.co/">
 			    <img src="../img/distrito1.jpg" width="30" height="30" alt="">
 		</a>
-		<a class="btn btn-outline-success btn-outline-info" href="../index.html">Volver al temario</a>
+		<a class="btn btn-outline-info" href="../index.html">Volver al temario</a>
 		<a class="navbar-brand" href="https://www.udistrital.edu.co/">	
 			<img src="../img/logoDistri.png" width="40" height="40" alt="">
 		</a>
-	  	<form class="form-inline">
-	    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	    <button class="btn btn-outline-success btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-	  	</form>
 	</nav>
 	<header>
 		<div class="container">
@@ -31,26 +27,29 @@
 	<div class="container-fluid">
 		<section class="main row">
 			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-					<h3>Ejemplo: La temperatura en septiembre </h3> <br>
+					<br><h3>Ejemplo: La temperatura en septiembre </h3> <br>
 					
 					<div class="ejemplo">
 						
 
 							<div class="container">
-							<a href="https://previews.123rf.com/images/aleshin/aleshin1508/aleshin150800001/43885633-dos-term%C3%B3metros-alta-y-baja-temperatura-sol-y-copo-de-nieve-con-una-sonrisa-vector-imagen-.jpg"><img class="mx-auto d-block" src="../img/temperatura.jpg" alt="" width="300rem" height="200rem"></a><br><br>
+							<img class="mx-auto d-block" src="../img/temperatura.jpg" alt="" width="300rem" height="200rem">
+							<h6 class="text-center">
+								<a href="https://previews.123rf.com/images/aleshin/aleshin1508/aleshin150800001/43885633-dos-term%C3%B3metros-alta-y-baja-temperatura-sol-y-copo-de-nieve-con-una-sonrisa-vector-imagen-.jpg">1</a>
+							</h6><br>
 							</div>
 							<p class="introduccion">
 							La temperatura durante septiembre está distribuida normalmente con media 18,7ºC y desviación standard 5ºC. Calcule la probabilidad de que la temperatura durante septiembre esté por debajo de 21ºC. <br>
 							</p>
 
 							Resolución <br>
-							μ = 18,7ºC &nbsp;&nbsp;&nbsp;σ = 5ºC &nbsp;&nbsp;&nbsp;X = 21ºC &nbsp;&nbsp;&nbsp;<b>(1)</b><br>
-							Z= (x-μ )/(μ )=  (21-18,7)/5= 0,46 &nbsp;&nbsp;&nbsp;<b>(2)</b><br>
-							Ahora vamos a la tabla y para el valor de Z = 0,46 tenemos que la probabilidad es de 0,6772. &nbsp;&nbsp;&nbsp;<b>(3)</b><br> <br>
+							μ = <input type="text" placeholder="18,7" id="num1" size="3">ºC &nbsp;&nbsp;&nbsp;σ = <input type="text" placeholder="5" id="num2" size="3">ºC &nbsp;&nbsp;&nbsp;x = <input type="text" placeholder="21" id="num3" size="3">ºC &nbsp;&nbsp;&nbsp;<b>(1)</b><br>
+							Z= ( x-μ ) / ( σ ) =  <label id="lblOp">(21-18,7)/5</label> = <label id="res">0,46</label> &nbsp;&nbsp;&nbsp;<b>(2)</b><br>
+							Ahora vamos a la tabla y para el valor de Z = <label id="res1">0,46</label> tenemos que la probabilidad es de 0,6772. &nbsp;&nbsp;&nbsp;<b>(3)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input class="btn btn-outline-info" type="button" value="Calcular" onclick="calcular();"><br> <br>
 
-							<h5>¿Qué averiguamos con eso?</h5>
+							<h5>¿Qué averiguamos con eso?</h5><br>
 							<p class="introduccion">
-							La tabla nos proporciona la probabilidad de que ocurran sucesos menores que Z= 0,46. Lo cual según la tabla esta probabilidad es de 0,6772 o lo que es lo mismo 67,72%. <br>
+							La tabla nos proporciona la probabilidad de que ocurran sucesos menores que Z= <label id="res2">0,46</label>. Lo cual según la tabla esta probabilidad es de 0,6772 o lo que es lo mismo 67,72%. <br>
 							Aplicado al ejemplo este resultado nos indica que la probabilidad de que la temperatura este por debajo de 21°C es de 67,72% <br><br>
 							Ejemplo 1.1 tomado del pdf Distribución Normal: Ejemplos y ejercicios resueltos. <i>La distribución normal ejemplos.</i> Distribución normal estándar, pag 3.
 							</p>
@@ -69,17 +68,20 @@
 			</div>
 		</section>
 		<div class="row">
-			<div class="container-fluid">
+			<div class="container">
 			<div class="col-xs-12">
 				<hr>
 				<a id="paso1"></a>
 				<h3>La distribucion Normal Reducida</h3>
 				<p>	
-					La distribución normal estándar, o tipificada o reducida, es aquella que tiene por media el valor cero, μ =0, y por desviación típica la unidad, σ =1. <br>
-					<img class="mx-auto d-block" src="../img/disNorRed.jpg" alt=""> <br><br>
+					La distribución normal estándar, o tipificada o reducida, es aquella que tiene por media el valor cero, μ =0, y por desviación típica la unidad, σ =1. <br><br>
+					<img class="mx-auto d-block" src="../img/disNorRed.gif" alt="">
+					<h6 class="text-center">
+						<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.disfrutalasmatematicas.com%2Fdatos%2Fdistribucion-normal-estandar.html&psig=AOvVaw0AJy5L9ldtQhr23s6C5cGY&ust=1583897478306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCa64n8jugCFQAAAAAdAAAAABAD">2</a>
+					</h6> <br><br>
 					La probabilidad de la variable X dependerá del área del recinto sombreado en la figura. Para poder utilizar la tabla tenemos que transformar la variable X que sigue una distribución N (μ, σ) en otra <a id="paso2"></a>variable Z que siga una distribución N (0, 1). <br> <br>
 					
-					<img class="mx-auto d-block" src="../img/distribucionZ.jpg" alt=""> <br> <br>
+					<img class="mx-auto d-block" src="../img/distribucionZ.jpg" alt=""> <br><br> <br>
 					<hr>
 					<a id="paso3"></a>
 					<h5>Tabla de distribución normal</h5> <br> <br>
@@ -140,6 +142,7 @@
 			<br><br>
 		</div>
 	</footer>
+	<script src="../js/operations.js"></script>
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.js"></script>
 </body>

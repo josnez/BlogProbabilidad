@@ -18,8 +18,8 @@
 			<img src="img/logoDistri.png" width="80" height="80" alt="">
 		</a>
 	  	<form class="form-inline">
-	    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	    <button class="btn btn-outline-success btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+	    <input class="form-control mr-sm-2" id="formulario" placeholder="Search" aria-label="Search">
+	    <button class="btn btn-outline-info my-2 my-sm-0" id="buscar">Buscar</button>
 	  	</form>
 	</nav>
 	<header>
@@ -29,21 +29,12 @@
 			<aside class="ventana text-white col-xs-12 col-sm-4 col-md-3 col-lg-3">
 				<br><br>
 				<h3 class="display-5 text-dark">Temario</h3>
-				<p>
+				
 					
-					<ul>
-					  <li><a class="btn btn-outline-dark tema" href="pag/tema1.html">La distribucion Normal general</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema2.html">La distribucion Normal Reducida (Tipificada)</a></li>
-					  <li><a class="tema btn btn-outline-dark"  href="pag/tema3.html">Funciones de distribucion</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema4.html">Funcion generatriz de momentos</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema5.html">Media y Varianza de la Distribucion Normal</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema6.html">Coeficientes de asimetria, kurtosis de distribucion normal</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema7.html">Teorema de adicion</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema8.html">Teorema Fundamental de las Distribuciones Normales</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema9.html">Distribuciones Normales-Transformadas</a></li>
-					  <li><a class="tema btn btn-outline-dark" href="pag/tema10.html">CHEBYSHEV</a></li>
+					<ul id="temas">
+					  
 					</ul>
-				</p>
+				
 			</aside>
 			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
 				<p>	
@@ -54,9 +45,14 @@
 					
 							Distribución normal o gaussiana. Función de densidad de probabilidad para la variable aleatoria continua. Fue descubierta por Carl Gauss al estudiar el comportamiento de los procesos aleatorios. Es ampliamente utilizada en estadística y teoría de las probabilidades.
 						</p>
-						<a href="https://www.uv.es/ceaces/tex1t/1%20normal/aninor0.gif"><img class="mx-auto d-block" src="img/introduccion.gif" alt=""><br/></a>
+						<img class="mx-auto d-block" src="img/introduccion.gif" alt="">
+						
+						<h6 class="text-center">
+							<a href="https://www.uv.es/ceaces/tex1t/1%20normal/aninor0.gif">1</a>
+						</h6><br>
+						
 						La función asociada a la distribución normal está dada por: <br/><br/>
-						<img class="mx-auto d-block" src="img/funDisNormal.jpg" alt="" width="300rem" height="100rem"><br/><br/>
+						<img class="mx-auto d-block" src="img/funDisNorm.gif" ><br/><br/>
 						<p>
 							Donde: <br> 
 							μ: media de la distribución. <br>
@@ -70,7 +66,10 @@
 						<h5>Representacion grafica</h5>
 						<p class="introduccion">
 							La representación gráfica de esta distribución es una curva simétrica y su forma se asemeja a una campana por loq ue se comoce como campana de Gauss.</p>
-						<a href="https://www.ecured.cu/images/0/07/CampanadeGauss.jpg"><img class="mx-auto d-block" src="img/CampanaDeGauss.jpg" alt="" width="350rem" height="200rem"></a> <br> <br>
+						<img class="mx-auto d-block" src="img/CampanaDeGauss.png"></a>
+						<h6 class="text-center">
+							<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fexceltotal.com%2Fcomo-hacer-una-campana-de-gauss-en-excel%2F&psig=AOvVaw152IpM1w9-dRbduCoe1icH&ust=1583897898212000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODI6ND9jugCFQAAAAAdAAAAABAm">2</a>
+						</h6><br>
 						<hr>
 						<h5>Propiedades de la distribucion normal</h5>
 						<ul>
@@ -84,7 +83,10 @@
 						<p class="introduccion">
 							Por su importancia en el análisis estadístico son de interés los intervalos donde el área bajo la curva corresponde a determinados valores de probabilidad.
 						</p>
-						<a href="https://www.ecured.cu/images/4/49/IntervalosDistribucion.jpg"><img class="mx-auto d-block" src="img/IntervalosDistribucion.jpg" alt="" width="500rem" height="200rem"></a><br/><br>
+						<img class="mx-auto d-block" src="img/IntervalosDistribucion.jpg" alt="" >
+						<h6 class="text-center">
+							<a href="https://www.ecured.cu/images/4/49/IntervalosDistribucion.jpg">3</a>
+						</h6><br>
 						<hr>
 						<h5>Tipificacion de una variable</h5>
 						<p class="introduccion">
@@ -117,5 +119,46 @@
 	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script>
+		const temas = [
+			{nombre: 'La Distribucion normal general', ref: 'pag/tema1.html'},
+			{nombre: 'La Distribucion normal reducida', ref: 'pag/tema2.html'},
+			{nombre: 'Funciones de Distribucion', ref: 'pag/tema3.html'},
+			{nombre: 'Media y Varianza de la Distribucion Normal', ref: 'pag/tema5.html'},
+			{nombre: 'Coeficientes de asimetria, kurtosis de distribucion normal', ref: 'pag/tema6.html'},
+			{nombre: 'Teorema de adicion', ref: 'pag/tema7.html'},
+			{nombre: 'Teorema Fundamental de las Distribuciones Normales', ref: 'pag/tema8.html'},
+			{nombre: 'Distribuciones Normales-Transformadas', ref: 'pag/tema9.html'},
+			{nombre: 'Teorema de Chebyshev', ref: 'pag/tema10.html'},
+			];
+		const formulario = document.querySelector('#formulario');
+		const boton = document.querySelector('#buscar');
+		const temitas = document.querySelector('#temas');
+
+		const filtrar = ()=>{
+			//console.log(formulario.value);
+			temitas.innerHTML = '';
+			const texto = formulario.value.toLowerCase();
+			for (let tema of temas) {
+				let nombre = tema.nombre.toLowerCase();
+				if(nombre.indexOf(texto)!== -1){
+					temitas.innerHTML += `
+						<li> <a class="btn btn-outline-dark tema" href="${tema.ref}">${tema.nombre}</a></li>
+					`
+				}
+			}
+
+			if (temitas.innerHTML === '') {
+				temitas.innerHTML += `
+					<li>Tema no encontrado</li>
+				`
+			}
+		}
+
+		boton.addEventListener('click', filtrar);
+		formulario.addEventListener('keyup', filtrar);
+
+		filtrar();
+	</script>
 </body>
 </html>

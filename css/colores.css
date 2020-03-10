@@ -14,7 +14,7 @@ header {
 
 .ventana {
 	background: #2996C9;
-	color: #000000;
+	color: #FFFFFF;
 }
 
 footer {
@@ -54,4 +54,8 @@ footer {
 
 .linkPasos {
 	color: #FDB300;
+}
+
+.temario {
+	color: #FFFFFF;
 }

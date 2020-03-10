@@ -17,10 +17,6 @@
 		<a class="navbar-brand" href="https://www.udistrital.edu.co/">	
 			<img src="../img/logoDistri.png" width="40" height="40" alt="">
 		</a>
-	  	<form class="form-inline">
-	    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	    <button class="btn btn-outline-success btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-	  	</form>
 	</nav>
 	<header>
 		<div class="container">
@@ -31,26 +27,28 @@
 	<div class="container-fluid">
 		<section class="main row">
 			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-				<h3>Ejemplo: Altura de los perros</h3> <br>
+				<br><h3>Ejemplo: Altura de los perros</h3> <br>
 					
 				<div class="ejemplo">
 					<p class="text-justify">
 						Tú y tus amigos han medido las alturas de sus perros (en milímetros):
 					</p>
-					<img src="../img/perros.jpg" alt=""><br><br>
-						600 + 470 + 170 + 430 + 300  = 1970<br>
-						1970 / 4 = 394 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(1)</b><br><br>
-						Así que la altura media es 394 mm. Vamos a dibujar esto en el gráfico: <br><br>
-						<img src="../img/perros1.jpg" alt=""><br><br>
-						Para calcular la varianza, toma cada diferencia, elévala al cuadrado, y haz la media: <br><br>
-						Varianza: σ2 =  (206)^2 + (76)^2 + (-224)^2 + (36)^2 + (-94)^2 = 108,520	= 21,704 <br><br>
+					<img class="mx-auto d-block" src="../img/alturaPerros.jpg" width="600px" height="180px" alt="">
+					<h6 class="text-center">
+						<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.dreamstime.com%2Fgrupo-de-diversos-perros-del-tama%25C3%25B1o-sobre-blanco-un-grande-diversas-razas-y-tama%25C3%25B1os-que-se-colocan-en-fondo-image142859694&psig=AOvVaw07m0cOdZJSKFmf544uYsYS&ust=1583891179717000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNil3-PljugCFQAAAAAdAAAAABAD">1</a>
+					</h6><br><br>
+					<input type="text" id="num1" placeholder="600" size="1"> + <input type="text" id="num2" placeholder="470" size="1"> + <input type="text" id="num3" placeholder="170" size="1"> + <input type="text" id="num4" placeholder="430" size="1"> + <input type="text" id="num5" placeholder="300" size="1">  = <label id="lblResSum" >1970</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btn btn-outline-info" value="Calcular" onclick="calcularPerros();"><br><br>
+					<label id="lblResSum1">1970</label> / 5 = <label id="lblProm">394</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(1)</b><br><br>
+					Así que la altura media es <label id="lblProm1">394</label> mm. <br><br>
+					Para calcular la varianza, toma cada diferencia, elévala al cuadrado, y haz la media: <br><br>
+					Varianza: σ^2 =  (<label id="lblDif1">206</label>)^2 + (<label id="lblDif2">76</label>)^2 + (<label id="lblDif3">-224</label>)^2 + (<label id="lblDif4">36</label>)^2 + (<label id="lblDif5">-94</label>)^2 = (<label id="lblSumDif">108520</label> / 5 )	= <label id="lblVarianza">21704</label> <br><br>
 
-						Así que la varianza es 21,704. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(2)</b><br>
-						Y la desviación estándar es la raíz de la varianza, así que: <br><br>
-						Desviación estándar: σ = √21,704 = 147 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(3)</b><br><br>
-						<p class="text-left">
-							Ejemplo tomado del pdf Pértegas Díaz, S., & Pita Fernández, S. (2001). <i>La distribución normal.</i> Cad Aten Primaria, 8, 268-274.
-						</p>
+					Así que la varianza es <label id="lblVarianza1">21704</label>. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(2)</b><br>
+					Y la desviación estándar es la raíz de la varianza, así que: <br><br>
+					Desviación estándar: σ = √<label id="lblVarianza2">21704</label> = <label id="lblDesviacion">147</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(3)</b><br><br>
+					<p class="text-left">
+						Ejemplo tomado del pdf Pértegas Díaz, S., & Pita Fernández, S. (2001). <i>La distribución normal.</i> Cad Aten Primaria, 8, 268-274.
+					</p>
 				</div>
 			</article>
 			<div class="ventana col-xs-12 col-sm-4 col-md-3 col-lg-3">
@@ -66,7 +64,7 @@
 		</section>
 		<hr>
 		<div class="row">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="col-xs-12">
 					<h3>Esperanza y varianza</h3>
 					<p class="introduccion">
@@ -76,7 +74,10 @@
 					</p>					
 					<img class="mx-auto d-block" src="../img/media.jpg" alt="" width="400rem" height="200rem">
 					<hr>
-					<a href="https://previews.123rf.com/images/iqoncept/iqoncept1611/iqoncept161100161/66144180-participa-para-ganar-concurso-de-la-rifa-palabras-billete-de-loter%C3%ADa-afortunada-3d-ilustraci%C3%B3n.jpg"><img class="mx-auto d-block" src="../img/rifa.jpg" alt="" width="300rem" height="200rem"></a> <br> <br>
+					<img class="mx-auto d-block" src="../img/rifa.jpg" alt="" width="300rem" height="200rem"> 
+					<h6 class="text-center">
+						<a href="https://previews.123rf.com/images/iqoncept/iqoncept1611/iqoncept161100161/66144180-participa-para-ganar-concurso-de-la-rifa-palabras-billete-de-loter%C3%ADa-afortunada-3d-ilustraci%C3%B3n.jpg">2</a>
+					</h6><br><br> <br>
 					<h5>Ejemplos</h5>
 					<p class="introduccion">
 						Si una persona compra una papeleta en una rifa, en la que puede ganar de 5.000 € ó un segundo premio de 2000 € con probabilidades de: 0.001 y 0.003. ¿Cuál sería el precio justo a pagar por la papeleta?
@@ -146,6 +147,7 @@
 			<br><br>
 		</div>
 	</footer>
+	<script src="../js/operations.js"></script>
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.js"></script>
 </body>
