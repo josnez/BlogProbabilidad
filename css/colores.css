@@ -13,8 +13,8 @@ header {
 }
 
 .ventana {
-	background: #2996C9;
-	color: #FFFFFF;
+	background: #fafafa;
+	color: #263238;
 }
 
 footer {
@@ -50,6 +50,7 @@ footer {
 
 .introduccion {
 	text-align: justify;
+	padding-right: 60px;
 }
 
 .linkPasos {
