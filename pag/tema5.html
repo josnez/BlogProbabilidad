@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Medida y varianza de la distribucion normal</title>
+	<title>Medida y varianza de la distribución normal</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/colores.css">
@@ -21,23 +21,27 @@
 	<header>
 		<div class="container">
 			
-			<h1 class="titPrin">Medida y varianza de la distribucion normal</h1> <br>
+			<h1 class="titPrin">Medida y varianza de la distribución normal</h1> <br>
 		</div>
 	</header>
 	<div class="container-fluid">
 		<section class="main row">
 			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-				<br><h3>Ejemplo: Altura de los perros</h3> <br>
+				<br><h3>Ej: Altura de los perros</h3> <br>
 					
 				<div class="ejemplo">
+					<p class="text-left">
+						Adaptado del unico ejemplo del pdf Pértegas Díaz, S., & Pita Fernández, S. (2001). <i>La distribución normal.</i> Cad Aten Primaria, 8, 268-274.
+					</p><br>
 					<p class="text-justify">
 						Tú y tus amigos han medido las alturas de sus perros (en milímetros):
 					</p>
+					
 					<img class="mx-auto d-block" src="../img/alturaPerros.jpg" width="600px" height="180px" alt="">
 					<h6 class="text-center">
-						<a href="#bibliografia">1</a>
+						<a href="#bibliografia">[1]</a>
 					</h6><br><br>
-					<input type="text" id="num1" placeholder="600" size="1" title="Por favor digita la altura del perro #1"> + <input type="text" id="num2" placeholder="470" size="1" title="Por favor digita la altura del perro #2"> + <input type="text" id="num3" placeholder="170" size="1" title="Por favor digita la altura del perro #3"> + <input type="text" id="num4" placeholder="430" size="1" title="Por favor digita la altura del perro #5"> + <input type="text" id="num5" placeholder="300" size="1" title="Por favor digita la altura del perro #6">  = <label id="lblResSum" >1970</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btn btn-outline-info" value="Calcular" onclick="calcularPerros();"><br><br>
+					<input type="text" id="num1" placeholder="600" size="1" title="Si desea cambiar el ejemplo por favor digita la altura del perro #1"> + <input type="text" id="num2" placeholder="470" size="1" title="Si desea cambiar el ejemplo por favor digita la altura del perro #2"> + <input type="text" id="num3" placeholder="170" size="1" title="Si desea cambiar el ejemplo por favor digita la altura del perro #3"> + <input type="text" id="num4" placeholder="430" size="1" title="Si desea cambiar el ejemplo por favor digita la altura del perro #5"> + <input type="text" id="num5" placeholder="300" size="1" title="Si desea cambiar el ejemplo por favor digita la altura del perro #6">  = <label id="lblResSum" >1970</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btn btn-outline-info" value="Calcular" onclick="calcularPerros();"><br><br>
 					<label id="lblResSum1">1970</label> / 5 = <label id="lblProm">394</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(1)</b><br><br>
 					Así que la altura media es <label id="lblProm1">394</label> mm. <br><br>
 					Para calcular la varianza, toma cada diferencia, elévala al cuadrado, y haz la media: <br><br>
@@ -46,9 +50,7 @@
 					Así que la varianza es <label id="lblVarianza1">21704</label>. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(2)</b><br>
 					Y la desviación estándar es la raíz de la varianza, así que: <br><br>
 					Desviación estándar: σ = √<label id="lblVarianza2">21704</label> = <label id="lblDesviacion">147</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(3)</b><br><br>
-					<p class="text-left">
-						Ejemplo tomado del pdf Pértegas Díaz, S., & Pita Fernández, S. (2001). <i>La distribución normal.</i> Cad Aten Primaria, 8, 268-274.
-					</p>
+					
 				</div>
 			</article>
 			<div class="ventana col-xs-12 col-sm-4 col-md-3 col-lg-3">
