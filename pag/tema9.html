@@ -25,40 +25,45 @@
 		</div>
 	</header>
 	<div class="container-fluid">
-		<section class="main row">
-			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-				<p>	
-					<h3>Ejemplo: </h3> <br>
-					
-					<div class="ejemplo">
-						<p class="introduccion">
-							
-						</p>
-					</div>
-				</p>
-			</article>
-			<div class="ventana col-xs-12 col-sm-4 col-md-3 col-lg-3">
-				<br><h4>Pasos de solucion: </h4> <br>
-				<p class="introduccion">
-					<ol>
-						<li>Encontramos el valor para μ, σ, X. </li><a href="">Descubrir como</a><hr>
-						<li>Reemplazamos en la ecuacion para encontrar Z. </li><a href="">Descubrir como</a><hr>
-						<li>Miramos en la tabla de distribucion normal que probabilidad hay para el Z obtenido. </li><a href="">Descubrir como</a><hr>
-					</ol>
- 				</p>
-			</div>
-		</section>
-		<div class="row">
-			<div class="container-fluid">
-				<div class="col-xs-12">
-					
-				</div>
-			</div>
+		<hr>
+		<div class="container col-xs-12">
+			<h3>Distribución normal - transformada</h3>
+			<p class="text-justify">
+				Una variable aleatoria x sigue una distribución normal-transformada si, no siendo ella misma normal, si lo es una cierta función de ella:
+			</p>
+			z = h (x) -> N [ μ ; σ ] <br><br>
+			la función de densidad de x será : <br><br>
+			<img class="d-block" src="../img/disTrans.gif" alt=""> <br>
+			donde el jacobiano &nbsp;&nbsp;&nbsp;<img src="../img/disTrans1.gif" alt=""> <br>
+			de forma que la función de densidad quedaría de la siguiente manera : <br><br>
+			<img  src="../img/disTrans2.gif" alt=""><br><br>
+			<p class="text-justify">
+				Un caso especialmente importante es el de la distribución logaritmo-normal , log-normal, o distribución de Galton: <br><br>
+				X sigue una distribución de Galton si Z = ln (x - a) -> N ( μ ; σ ) <br><br>
+				Y , así , su función de densidad será  : <br><br>
+				<img src="../img/disTrans3.gif" alt=""><br><br>
+				que evidentemente , sólo estará  definida para valores x > a. <br>
+				A modo orientativo planteamos la forma de tres distribuciones lognormales con medias y varianza distintas : <br><br>
+				<img class="mx-auto d-block" src="../img/disTrans4.gif" alt="">
+				<h6 class="text-center">
+						<a href="#bibliografia">[1]</a>
+					</h6><br>
+			</p>
+			
+			
 		</div>
+	</div>
+	<hr>
+	<a id="bibliografia"></a>
 	<footer>
 		<div class="container">
+			<h5>Referencias: </h5>
+			<ul>
+				<li><a href="https://www.uv.es/ceaces/pdf/normal.pdf">https://www.uv.es/ceaces/pdf/normal.pdf</a><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp[1]</b></li>
+			</ul>
 		</div>
 	</footer>
+	<br><br>
 	<script src="../js/jquery.js"></script>
 	<script src="../js/bootstrap.js"></script>
 </body>
