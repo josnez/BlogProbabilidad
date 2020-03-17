@@ -10,12 +10,13 @@
 <body>
 	<nav class="navbar sticky-top navbar-dark bg-dark">
 	<!-- Navbar content -->
-		<a class="navbar-brand" href="https://bogota.gov.co/">	
-			<img src="img/distrito1.jpg" width="60" height="60" alt="">
+
+		<a class="navbar-brand" href="https://www.udistrital.edu.co/">	
+			<img src="img/logoDistri.png" width="80" height="80" alt="Co-gestores:" data-html="true" data-toggle="tooltip" data-placement="right" title="Co-gestores: <br><br> Galeano, Diego A. (20172020074) dagherrera@correo.udistrital.edu.co<br><br> Andrade, Nicolas A. (20172020023) nicoanda@correo.udistrital.edu.co<br><br> Wilches, Andres F. (20172020114) afwilchest@correo.udistrital.edu.co<br><br> Rodriguez, Daniel E. (20172020120) derodriguezf@correo.udistrital.edu.co<br><br> Nuñez, Josue A. (20172020071) janunezp@correo.udistrital.edu.co">
 		</a>
 		<h1 class="titPrin">Distribución de probabilidad</h1>
-		<a class="navbar-brand" href="https://www.udistrital.edu.co/">	
-			<img src="img/logoDistri.png" width="80" height="80" alt="">
+		<a class="navbar-brand" href="https://bogota.gov.co/">	
+			<img src="img/distrito1.jpg" width="60" height="60" alt="" >
 		</a>
 	  	<form class="form-inline">
 	    <input class="form-control mr-sm-2" id="formulario" placeholder="Search" aria-label="Search">
@@ -120,12 +121,15 @@
 				<li>Pagina de libre aceceso: <a  href="http://www.x.edu.uy/inet/Distribucion_Normal_ejemplos.pdf">http://www.x.edu.uy/inet/Distribucion_Normal_ejemplos.pdf</a></li>
 				<li>Pagina de libre aceceso: <a href="http://www.estadistica.net/Aeronautica2016/ejercicios-distribuciones.pdf">http://www.estadistica.net/Aeronautica2016/ejercicios-distribuciones.pdf</a></li>
 			</ul>
-			<b>Coautores: Diego UD - Daniel UD - Felipe UD - Nicolas UD - Josue UD</b>
 		</div>
 	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 	<script>
+		$(function(){
+    	$('[data-toggle="tooltip"]').tooltip()
+		});
 		const temas = [
 			{nombre: 'La Distribución normal general', ref: 'pag/tema1.html'},
 			{nombre: 'La Distribución normal reducida', ref: 'pag/tema2.html'},
